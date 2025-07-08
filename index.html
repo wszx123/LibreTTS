@@ -324,12 +324,22 @@
 
     <footer class="text-center py-3 mt-3" style="background-color: #f8f9fa; font-size: 0.9rem;">
         <p class="mb-1">
-            <a href="https://zwei.de.eu.org" target="_blank">Zwei</a> | 
-            <a href="https://github.com/LibreSpark/LibreTTS" target="_blank">Code</a>
-        </p>
-        <p class="mb-0">
-            由 <a href="https://www.nodeseek.com/post-305185-1" target="_blank">NodeSupport</a> 和 
-            <a href="https://yxvm.com/aff.php?aff=819" target="_blank">YXVM</a> 赞助
+
+            <span id="timeDate">载入天数...</span>
+                    <script language="javascript"> 
+                    var now = new Date();
+                    function createtime(){
+                        var grt= new Date("7/7/2025 00:00:00");/*---这里是网站的启用时间--*/
+                        now.setTime(now.getTime()+250);
+                        days = (now - grt ) / 1000 / 60 / 60 / 24;
+                        dnum = Math.floor(days);
+                        document.getElementById("timeDate").innerHTML = "稳定运行"+dnum+"天";
+                    }
+                    setInterval("createtime()",250); 
+                </script> 
+                <span <p>  总访问量 <span id="busuanzi_site_pv"></span> 次 | <a href="https://boke.199881.xyz/" target="_blank"> <span style="color: green;">博客 | <a href="https://199881.xyz" target="_blank">导航</a> | <a href="https://github.com/LibreSpark/LibreTTS" target="_blank">Code</a>  </p></span>
+
+                <script defer src="https://bsz.211119.xyz/js"></script>
         </p>
     </footer>
 
